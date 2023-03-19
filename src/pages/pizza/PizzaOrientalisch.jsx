@@ -1,13 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import Cookies from 'js-cookie';
-import usePageViewTracker from "../../hooks/usePageViewTracker.jsx";
+import usePageViewTracker from "../../usePageViewTracker.jsx";
 
 const PizzaPaprika = () => {
-    usePageViewTracker();
     const [comments, setComments] = useState([]);
     const [input, setInput] = useState('');
     const type = "PizzaOrientalisch";
     useEffect(() => {
+        usePageViewTracker(type);
+
         fetch('http://localhost:8080/comments', {
             method: 'GET',
         })
@@ -97,7 +98,7 @@ const PizzaPaprika = () => {
                         </ol>
                     </div>
                     <div className="w-full lg:w-1/2">
-                        <img src="src/assets/pizza/pizza4.jpg" alt="Margherita Pizza" className="w-full rounded-lg"/>
+                        <img src="src/assets/pizza/PizzaOrientalisch.jpg" alt="Margherita Pizza" className="w-full rounded-lg"/>
                     </div>
                 </div>
                 <div className="mt-8">
@@ -137,6 +138,6 @@ const PizzaPaprika = () => {
                 </div>
             </div>
         );
-    };
+    }
 }
 export default PizzaPaprika;

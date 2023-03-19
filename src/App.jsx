@@ -8,6 +8,7 @@ import PizzaRucola from "./pages/pizza/PizzaRucola.jsx";
 import PizzaOrientalisch from "./pages/pizza/PizzaOrientalisch.jsx";
 import PizzaSalami from "./pages/pizza/PizzaSalami.jsx";
 import PizzaVeggie from "./pages/pizza/PizzaVeggie.jsx";
+import Top3 from "./commponents/Top3.jsx";
 
 
 function App() {
@@ -24,35 +25,41 @@ function App() {
     }, [token]);
 
     return (<div className="">
-            <BrowserRouter>
-                <Switch>
-                    <Route exact path={["/", "/index.html"]}>
-                        <Navbar/>
-                        <div className="flex flex-col space-y-10 z-10 ">
-                            <Pizza/>
-                        </div>
-                    </Route>
-                    <Route path="/pizzaPaprika">
-                        <PizzaPaprika/>
-                    </Route>
-                    <Route path="/pizzaMozzarella">
-                        <PizzaMozzarella/>
-                    </Route>
-                    <Route path="/pizzaRucola">
-                        <PizzaRucola/>
-                    </Route>
-                    <Route path="/pizzaOrientalisch">
-                        <PizzaOrientalisch/>
-                    </Route>
-                    <Route path="/pizzaSalami">
-                        <PizzaSalami/>
-                    </Route>
-                    <Route path="/pizzaVeggie">
-                        <PizzaVeggie/>
-                    </Route>
-                </Switch>
-            </BrowserRouter>
-        </div>);
+        <BrowserRouter>
+            <Switch>
+                <Route exact path={["/", "/index.html"]}>
+                    <div className="z-20 mb-10">
+                    <Navbar/>
+                    </div>
+
+                    <div className="flex flex-col mb-20 z-10 ">
+                        <Pizza/>
+                        <Top3/>
+                    </div>
+
+                </Route>
+                <Route path="/pizzaPaprika">
+                    <PizzaPaprika/>
+                </Route>
+                <Route path="/pizzaMozzarella">
+                    <PizzaMozzarella/>
+                </Route>
+                <Route path="/pizzaRucola">
+                    <PizzaRucola/>
+                </Route>
+                <Route path="/pizzaOrientalisch">
+                    <PizzaOrientalisch/>
+                </Route>
+                <Route path="/pizzaSalami">
+                    <PizzaSalami/>
+                </Route>
+                <Route path="/pizzaVeggie">
+                    <PizzaVeggie/>
+                </Route>
+
+            </Switch>
+        </BrowserRouter>
+    </div>);
 }
 
 export default App;

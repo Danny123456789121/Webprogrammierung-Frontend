@@ -10,37 +10,37 @@ function Pizza() {
         {
             id: 1,
             name: "Paprika",
-            image: "src/assets/pizza/pizza1.jpg",
+            image: "src/assets/pizza/PizzaPaprika.jpg",
             link: "pizzaPaprika",
         },
         {
             id: 2,
             name: "Mozzarella",
-            image: "src/assets/pizza/pizza2.jpg",
+            image: "src/assets/pizza/PizzaMozzarella.jpg",
             link: "pizzaMozzarella",
         },
         {
             id: 3,
             name: "Rucola",
-            image: "src/assets/pizza/pizza3.jpg",
+            image: "src/assets/pizza/PizzaRucola.jpg",
             link: "pizzaRucola",
         },
         {
             id: 4,
             name: "Orientalisch",
-            image: "src/assets/pizza/pizza4.jpg",
+            image: "src/assets/pizza/PizzaOrientalisch.jpg",
             link: "pizzaOrientalisch",
         },
         {
             id: 5,
             name: "Salami",
-            image: "src/assets/pizza/pizza5.jpg",
+            image: "src/assets/pizza/PizzaSalami.jpg",
             link: "pizzaSalami",
         },
         {
             id: 6,
             name: "Veggie",
-            image: "src/assets/pizza/pizza6.jpg",
+            image: "src/assets/pizza/PizzaVeggie.jpg",
             link: "pizzaVeggie",
         }
     ];
@@ -92,9 +92,9 @@ function Pizza() {
     };
 
     return (
-        <div className="overflow-x-auto">
+        <div>
             <h1 className="text-4xl text-center font-bold mt-20 mb-5">Pizza</h1>
-            <div className="flex flex-nowrap space-x-5 ml-10">
+            <div className="flex flex-nowrap space-x-5 ml-10 overflow-x-auto overflow-y-hidden">
                 {pizzas.map((pizza) => (
                     <div key={pizza.name} className="flex-shrink-0">
                         <Link to={pizza.link}>
