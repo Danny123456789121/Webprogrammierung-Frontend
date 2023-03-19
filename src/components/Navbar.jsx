@@ -1,8 +1,11 @@
-import React from "react";
+import React from 'react'
 
 function Navbar() {
     return (
-        <header id="navbar" className="z-50 fixed top-0 w-full bg-gray-700 text-white py-5 text-center backdrop-blur-md">
+        <header
+            id="navbar"
+            className="z-50 fixed top-0 w-full bg-gray-700 text-white py-5 text-center backdrop-blur-md"
+        >
             <nav className="font-semibold text-2xl font-sans">
                 <ul className="flex justify-center">
                     <li className="mr-5">
@@ -26,7 +29,7 @@ function Navbar() {
                 </ul>
             </nav>
         </header>
-    );
+    )
 }
 
-export default Navbar;
+export default Navbar

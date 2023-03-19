@@ -3,7 +3,7 @@ import Favorite from './Favorite'
 
 import pizzas from '@assets/pizzas.json'
 
-function Pizza() {
+function Pizzas() {
     return (
         <div>
             <h1 className="text-4xl text-center font-bold mt-20 mb-5">Pizza</h1>
@@ -30,4 +30,4 @@ function Pizza() {
     )
 }
 
-export default Pizza
+export default Pizzas

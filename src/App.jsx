@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import Navbar from './commponents/Navbar.jsx'
-import Pizza from './commponents/Pizza.jsx'
+import Navbar from './components/Navbar.jsx'
+import Pizzas from './components/Pizzas.jsx'
 import { useEffect } from 'react'
 import PizzaPaprika from './pages/pizza/PizzaPaprika.jsx'
 import PizzaMozzarella from './pages/pizza/PizzaMozzarella.jsx'
@@ -8,7 +8,7 @@ import PizzaRucola from './pages/pizza/PizzaRucola.jsx'
 import PizzaOrientalisch from './pages/pizza/PizzaOrientalisch.jsx'
 import PizzaSalami from './pages/pizza/PizzaSalami.jsx'
 import PizzaVeggie from './pages/pizza/PizzaVeggie.jsx'
-import Top3 from './commponents/Top3.jsx'
+import Top3 from './components/Top3.jsx'
 
 function App() {
     const token = ''
@@ -33,7 +33,7 @@ function App() {
                         </div>
 
                         <div className="flex flex-col mb-20 z-10 ">
-                            <Pizza />
+                            <Pizzas />
                             <Top3 />
                         </div>
                     </Route>

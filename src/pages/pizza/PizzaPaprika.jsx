@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import usePageViewTracker from '../../usePageViewTracker.jsx'
-import Comments from '../../commponents/Comments.jsx'
+import Comments from '../../components/Comments.jsx'
 import pizzas from '@assets/pizzas.json'
 
 const PizzaPaprika = () => {

@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import usePageViewTracker from '../../usePageViewTracker.jsx'
 import pizzas from '@assets/pizzas.json'
-import Comments from '../../commponents/Comments.jsx'
+import Comments from '../../components/Comments.jsx'
 
 const PizzaSalami = () => {
     const type = 'Salami'
