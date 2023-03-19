@@ -1,0 +1,32 @@
+{
+    "Paprika": {
+        "name": "Pizza Paprika",
+        "image": "assets/pizza/PizzaPaprika.jpg",
+        "link": "pizzaPaprika"
+    },
+    "Mozzarella": {
+        "name": "Pizza Mozzarella",
+        "image": "assets/pizza/PizzaMozzarella.jpg",
+        "link": "pizzaMozzarella"
+    },
+    "Rucola": {
+        "name": "Pizza Rucola",
+        "image": "assets/pizza/PizzaRucola.jpg",
+        "link": "pizzaRucola"
+    },
+    "Orientalisch": {
+        "name": "Pizza Orientalisch",
+        "image": "assets/pizza/PizzaOrientalisch.jpg",
+        "link": "pizzaOrientalisch"
+    },
+    "Salami": {
+        "name": "Pizza Salami",
+        "image": "assets/pizza/PizzaSalami.jpg",
+        "link": "pizzaSalami"
+    },
+    "Veggie": {
+        "name": "Pizza Veggie",
+        "image": "assets/pizza/PizzaVeggie.jpg",
+        "link": "pizzaVeggie"
+    }
+}
